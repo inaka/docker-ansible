@@ -5,7 +5,7 @@ COMPOSE        ?= $(shell which docker-compose)
 
 DKR_REGISTRY   ?= inakaops
 DKR_IMAGE      ?= ansible
-DKR_TAG        ?= 1.9.6
+DKR_TAG        ?= 2.1.1
 
 DKR_BUILD_OPTS ?= -t $(DKR_REGISTRY)/$(DKR_IMAGE):$(DKR_TAG)
 

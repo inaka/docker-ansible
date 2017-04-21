@@ -19,7 +19,7 @@ RUN apt-get clean &&\
 
 RUN pip install --upgrade pip
 RUN pip install --upgrade awscli boto
-RUN pip install ansible==1.9.6
+RUN pip install ansible==2.1.1
 
 RUN mkdir /workdir
 WORKDIR /workdir
