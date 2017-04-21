@@ -1,0 +1,5 @@
+./config/ansible/
+./config/aws/
+./config/ssh/
+./tmp
+.ENV

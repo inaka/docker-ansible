@@ -1,0 +1,12 @@
+version: "2"
+services:
+  ansible:
+    build: .
+    container_name: ansible
+    env_file: .ENV
+    volumes:
+      - ./config/ssh:/root/.ssh/
+      - ./config/aws:/root/.aws/
+      - ./config/ansible/:/etc/ansible/
+      - ./:/workdir/
+      - ./tmp/:/root/.ansible/

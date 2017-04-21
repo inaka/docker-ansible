@@ -1,0 +1,18 @@
+# Ansible container
+
+## Setup
+
+Ansible uses boto to dynamicaly get from AWS the inventory of the instances. Place the boto
+config files in config/aws/ directory.
+
+Ansible dynamic inventory configuration files are mounted fromo config/ansible directory.
+
+The conection to the instances is done over ssh. Place the apropiate ssh credentials and config files in config/ssh/ directory.
+
+## Use
+
+$ docker-compose ansible <host> [options]
+
+example:
+
+ping all servers -> $ docker-compose ansible all -m ping
